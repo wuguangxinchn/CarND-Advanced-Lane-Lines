@@ -87,7 +87,7 @@ The key processing in this step is to warp the lane area back to the perspective
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [video1](./project_video.mp4)
+Here's the [link to my video result](video1)
 
 ---
 
