@@ -57,18 +57,19 @@ I have applied Sobel, Magnitude of the Gradient, Direction of the Gradient, and 
 To perfrom the perspective transform more clearly, I will use a image with straight lines.  
 Firstly I choosed 4 points along the two lanes. And then perform the perspective transform by cv2.getPerspectiveTransform function.
 
-![alt text][image4]
+![alt text][image4]  
+![alt text][image5]
 
 After that I applied perspective transform to the binary images after combined threshold
 
-![alt text][image5]
+![alt text][image6]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 General approach we used to identify lane-line pixels is "Sliding Window".  
 The first step is to split the histogram into two sides, one for each lane line. Then set a few hyperparameters related to our sliding windows, and set them up to iterate across the binary activations in the image. After that I looped for nwindows, and finally fit a polynomial to the line.
 
-![alt text][image6]
+![alt text][image7]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -78,7 +79,7 @@ I did this in calc_curv_rad_and_center_dist function
 
 The key processing in this step is to warp the lane area back to the perspective of the original image using the inverse perspective matrix Minv and overlaid onto the original image.
 
-![alt text][image7]
+![alt text][image9]
 
 ---
 
