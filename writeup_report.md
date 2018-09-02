@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 
-Please see the code of this project in Jupyter notebook `main.ipynb`
+Please see the code of this project in Jupyter notebook `main_updated.ipynb`
 ---
 
 ### Camera Calibration
@@ -89,6 +89,7 @@ The key processing in this step is to warp the lane area back to the perspective
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
+Video pipeline is much more challenging comparing to single image processing. In the main_updated.ipynb, I added additional processing for smoothening the lane line, mainly by introducing 'search_around_poly' function and 'Line' class.  
 Here's the [link to my video result](./output_videos/project_video.mp4)
 
 ---
